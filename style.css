@@ -2,3 +2,20 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.btn-whatsapp {
+  text-align: center;
+  display: inline-block;
+  background-color: #25D366;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128C7E;
