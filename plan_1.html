@@ -75,15 +75,15 @@
                       <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#83cdfb"><path d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z"/></svg> Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="acerca_de.html">
                       <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#83cdfb"><path d="M51-404q-26-43-38.5-86.5T0-576q0-110 77-187t187-77q63 0 119.5 26t96.5 71q40-45 96.5-71T696-840q110 0 187 77t77 187q0 42-12.5 85T909-405q-10-12-22.5-20.5T860-440q20-35 30-69t10-67q0-85-59.5-144.5T696-780q-55 0-108.5 32.5T480-649q-54-66-107.5-98.5T264-780q-85 0-144.5 59.5T60-576q0 33 10 67t30 69q-14 6-26.5 15T51-404ZM0-80v-53q0-39 42-63t108-24q13 0 24 .5t22 2.5q-8 17-12 34.5t-4 37.5v65H0Zm240 0v-65q0-65 66.5-105T480-290q108 0 174 40t66 105v65H240Zm540 0v-65q0-20-3.5-37.5T765-217q11-2 22-2.5t23-.5q67 0 108.5 24t41.5 63v53H780ZM480-230q-80 0-130 24t-50 61v5h360v-6q0-36-49.5-60T480-230Zm-330-20q-29 0-49.5-20.5T80-320q0-29 20.5-49.5T150-390q29 0 49.5 20.5T220-320q0 29-20.5 49.5T150-250Zm660 0q-29 0-49.5-20.5T740-320q0-29 20.5-49.5T810-390q29 0 49.5 20.5T880-320q0 29-20.5 49.5T810-250Zm-330-70q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-440q0 50-34.5 85T480-320Zm0-180q-25 0-42.5 17T420-440q0 25 17.5 42.5T480-380q26 0 43-17.5t17-42.5q0-26-17-43t-43-17Zm0 60Zm0 300Z"/></svg> Acerca de</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href=".#servicos">
                       <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#83cdfb"><path d="M140-80q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h180v-100q0-24 18-42t42-18h200q24 0 42 18t18 42v100h180q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm0-60h680v-520H140v520Zm240-580h200v-100H380v100ZM140-140v-520 520Zm310-230v120h60v-120h120v-60H510v-120h-60v120H330v60h120Z"/></svg> Nuestros Servicios</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href=".#planes">
                       <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#83cdfb"><path d="M100-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h760q24 0 42 18t18 42v600q0 24-18 42t-42 18H100Zm0-60h760v-600H100v600Zm0 0v-600 600Zm80-100h60v-170h200v170h60v-400h-60v170H240v-170h-60v400Zm455-85h60v-85h85v-60h-85v-85h-60v85h-85v60h85v85Z"/></svg> Nuestros Planes</a>
                   </li>
                 </ul>
@@ -106,44 +106,104 @@
     <section id="quienes_somos" style="margin-left: 10px; margin-right: 10px;">
       <br>
       <br>
-      <h1>En contrucción</h1>
+
+        <h1 id="frase" style="text-align: center; color: white;">SOMOS BIENESTAR</h1>
+
+        <script>
+          // Arreglo con las palabras alternativas
+          var palabras = ["BIENESTAR", "SALUD", "CONECTA PSICOLOGÍA"];
+          var indice = 0; // Índice de la palabra actual
+
+          // Función para cambiar la segunda palabra de la frase
+          function cambiarPalabra() {
+            document.getElementById("frase").innerHTML = "SOMOS " + palabras[indice];
+            indice = (indice + 1) % palabras.length; // Avanzar al siguiente índice
+          }
+
+          // Llamar a la función inicialmente
+          cambiarPalabra();
+
+          // Cambiar la palabra cada 3 segundos
+          setInterval(cambiarPalabra, 3000);
+        </script>
+        <br>
+        <b class="content d-flex flex-column justify-content-center" style="text-align: center; color: white">Somos Conecta Psicología, tu Centro de Salud Mental que te brinda Bienestar y Tranquilidad.</b>
+    </section>
+  <section style="background-color: #7FB7F0;">
+    <section id="quienes_somos" style="margin-left: 10px; margin-right: 10px;">
       <br>
       <br>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/plan1.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Bienestar Emocional Esencial</h5>
+              <br>
+              <p class="card-text">Ideal para personas que buscan un acercamiento inicial al cuidado de su
+              salud mental y emocional.</p>
+              <br>
+              <p><b>Incluye:</b></p>
+              <ul>
+                <li>4 sesiones individuales de terapia de 50 minutos.</li>
+                <li>Evaluación inicial para conocer el estado emocional actual.</li>
+                <li>Seguimiento vía email entre sesiones.</li>
+                <li>Recursos y materiales básicos para apoyo en casa.</li>
+              </ul>
+              <b>Precio:</b>
+              <b style="color: #7FB7F0;">$100.000</b>
+            </div>
+          </div>
+          <br>
+          <a href="https://wa.me/56933673980" class="btn-whatsapp" style="width: 100%;">
+              <i class="fa fa-whatsapp" style="margin-right: 10px;"></i> Contrata Aquí
+          </a>
+        </div>
+      </div>
+      <br>
+      </section>
     </section>
   </section>
-  </body>
-  <footer style="background-color: blue;">
-  <br>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-4">
-        <p>
-          <b>Conecta Psicología</b>
-        </p>
-        <p>
-          <b>Email:</b>
-          <a href="mailto:qpmzj@example.com">Correo</a>
-        </p>
-        <p>
-          <b>Teléfono:</b>
-          <a href="#"></a>
-        </p>
-        <p>
-          <b>Dirección:</b>
-          <a href="#">Dirección</a>
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <ul>
-          <li><img src="" alt="img_facebook"></li>
-          <li><img src="" alt="img_instagram"></li>
-          <li><img src="" alt="img_whatsApp"></li>
-        </ul>
-      </div>
-      <div class="col-sm-4">
-        <img src="" alt="img_googlemaps">
-      </div>
-    </div>
-  </footer>
-
-  </html>
+      <br>
+      <br>
+      <section>
+        <div class="card mb-3" style="max-width: 100%; background-color: #e3f2fd;">
+          <div class="row g-0" style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
+            <div class="col-md-4">
+              <img style="width: 100px; height: 100px;" src="static/icon_conecta.png" class="img-fluid rounded-start" alt="...">
+              <br>
+              <br>
+                <b>Email:
+              <br>
+                <a href="mailto:qpmzj@example.com">micorreo@gmail.com</b></a>
+              <br>
+              <br>
+              <b>Teléfono:
+              <br>
+                <a href="https://wa.me/56933673980">+569 33673980</b></a>
+              <br>
+              <br>
+                <b>Dirección:
+              <br>
+                <a href="https://maps.app.goo.gl/ab5ZuGyrRAnDHAnD9"> Los Mañíos 660, 8150215 Santiago, Puente Alto, Región Metropolitana.</b></a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <br>
+              <br>
+              <ul style="list-style-type: none;">
+                <li><img style="width: 50px; height: 50px; margin-bottom: 5px;" src="media/facebook.png" alt="img_facebook"></li>
+                <li><img style="width: 50px; height: 50px; margin-bottom: 5px;" src="media/instagram.png" alt="img_instagram"></li>
+                <li><a href="https://wa.me/56933673980"> <img style="width: 50px; height: 50px; margin-bottom: 5px;" src="media/wts.png" alt="img_whatsApp"></a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5917129958184!2d-70.59075392481803!3d-33.58994857333445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d7795e761c1d%3A0x901716cb8fb24cdd!2sSalud%20mental%2FPsicolog%C3%ADa.%20Consultas%3A%20Ansiedad%2C%20TOC%2C%20TLP%2C%20ataque%20de%20p%C3%A1nico%2C%20depresi%C3%B3n%2C%20terapia%20de%20parejas%2C%20adolescente.!5e0!3m2!1ses!2scl!4v1718950327010!5m2!1ses!2scl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      </body>
+    </html>
